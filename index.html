@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Default Responsive Grid system</title>
+	
+	<!-- font awesome v4.7.0 File -->
+    <link href="fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+	
+    <!-- Responsive File -->
+    <link href="css/responsive-grid.css" rel="stylesheet" />
+	
+	<!-- Animation File -->
+    <link href="css/animate.css" rel="stylesheet" />
+	
+
+  </head>
+  <body>
+    
+	<div class="container">
+		<div class="row">
+			<div class="menu-primary-container">
+				
+				
+				<div class="cpbtn" onclick="showmenu()">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				
+				
+				<ul id="menu-primary" class="collaspe">
+					<li> <a href="#"> Menu 1 </a> </li>
+					<li> <a href="#"> Menu 2 </a> </li>
+					<li> <a href="#"> Menu 3 </a> </li>
+					<li class="dropdown"> 
+					
+						<a href="#"> Menu 4  <span class="fa fa-caret-down"></span></a>
+						
+						<ul>
+							<li> <a href="#"> Menu 1 </a> </li>
+							<li> <a href="#"> Menu 2 </a> </li>
+							<li> <a href="#"> Menu 3 </a> </li>
+							<li class="dropdown"> 
+					
+								<a href="#"> Menu 4  <span class="fa fa-caret-right"></span></a>
+								<ul>
+									<li> <a href="#"> third level Menu 1 </a> </li>
+									<li> <a href="#"> Menu 2 </a> </li>
+									<li> <a href="#"> Menu 3 </a> </li>
+								</ul>
+							
+							</li>
+							<li> <a href="#"> Menu 5 </a> </li>
+						</ul>
+					
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="clearfix"></div>
+	
+	<div class="container">
+		
+		<div class="row">
+		
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 box"> 1 - one column </div>
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 box"> 2 - one column </div>
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 box"> 3 - one column </div>
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 box"> 4 - one column </div>
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 box"> 5 - one column </div>
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 box"> 6 - one column </div>
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 box"> 7 - one column </div>
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 box"> 8 - one column </div>
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 box"> 9 - one column </div>
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 box"> 10 - one column </div>
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 box"> 11 - one column </div>
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 box"> 12 - one column </div>
+			
+		</div>
+		
+		<div class="row">
+		
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 box"> 1 - two column </div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 box"> 2 - two column </div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 box"> 3 - two column </div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 box"> 4 - two column </div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 box"> 5 - two column </div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 box"> 6 - two column </div>
+			
+		</div>
+		
+		<div class="row">
+		
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 box"> 1 - three column </div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 box"> 2 - three column </div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 box"> 3 - three column </div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 box"> 4 - three column </div>
+			
+		</div>
+		
+		<div class="row">
+		
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 box"> 1 - four column </div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 box"> 2 - four column </div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 box"> 3 - four column </div>
+			
+		</div>
+		
+		<div class="row">
+		
+			<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 box"> 1 - five column </div>
+			<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 box"> 2 - five column </div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 box"> 3 - two column </div>
+			
+		</div>
+		
+		<div class="row">
+		
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 box"> 1 - six column </div>
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 box"> 2 - six column </div>
+			
+		</div>
+		
+		<div class="row">
+		
+			<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 box"> 1 - seven column </div>
+			<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 box"> 2 - five column </div>
+			
+		</div>
+		
+		<div class="row">
+		
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 box"> 1 - eight column </div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 box"> 2 - four column </div>
+			
+		</div>
+		
+		<div class="row">
+		
+			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 box"> 1 - Nine column </div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 box"> 2 - three column </div>
+			
+		</div>
+		
+		<div class="row">
+		
+			<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 box"> 1 - ten column </div>
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 box"> 2 - two column </div>
+			
+		</div>
+		
+		<div class="row">
+		
+			<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 box"> 1 - eleven column</div>
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 box"> 2 - one column </div>
+			
+		</div>
+		
+		<div class="row">
+		
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box"> 1 - twelve column </div>
+			
+		</div>
+	
+	
+	</div>
+	
+	<script type="text/javascript" src="scripts/js/simple-collaspe.js" ></script>
+    
+  </body>
+</html>

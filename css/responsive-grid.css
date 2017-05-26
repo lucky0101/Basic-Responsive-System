@@ -1,0 +1,449 @@
+/*
+* Responsive Grid v1.0.0 (http://www.rocksdesign.in)
+* Copyright 2017 - 2018 Rocks Design.
+* Licensed Cretive Common CC BY 3.0
+* Author : Sidhharth Gupta (http://www.rocksdesign.in)
+*/
+
+* {
+    box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+html {
+	#font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*helper - testing class only*/
+.box {
+	
+	border:1px solid red;
+	
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* we update this line -- @media only screen and (min-width: 320px) and (max-width: 479px){} */
+
+
+@media only screen and (max-width: 479px){
+	
+	.container {
+		width:100%;
+	}
+	
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	
+	.container {
+		width:750px;
+	}
+	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	
+	.container {
+		width: 970px;
+	}
+	
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1999px){
+	
+	.container {
+		width: 1170px;
+	}
+	
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+	margin-right: -15px;
+	margin-left: -15px; 
+	display: -webkit-box; /* Display all column in same hieght IE not supported*/
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+	-webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; /* --//-- */
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+
+@media only screen and (max-width: 767px){
+	
+	.col-xs-1 {width: 100%;}
+	.col-xs-2 {width: 100%;}
+	.col-xs-3 {width: 100%;}
+	.col-xs-4 {width: 100%;}
+	.col-xs-5 {width: 100%;}
+	.col-xs-6 {width: 100%;}
+	.col-xs-7 {width: 100%;}
+	.col-xs-8 {width: 100%;}
+	.col-xs-9 {width: 100%;}
+	.col-xs-10 {width: 100%;}
+	.col-xs-11 {width: 100%;}
+	.col-xs-12 {width: 100%;}
+	
+	
+	.col-sm-1 {width: 100%;}
+	.col-sm-2 {width: 100%;}
+	.col-sm-3 {width: 100%;}
+	.col-sm-4 {width: 100%;}
+	.col-sm-5 {width: 100%;}
+	.col-sm-6 {width: 100%;}
+	.col-sm-7 {width: 100%;}
+	.col-sm-8 {width: 100%;}
+	.col-sm-9 {width: 100%;}
+	.col-sm-10 {width: 100%;}
+	.col-sm-11 {width: 100%;}
+	.col-sm-12 {width: 100%;}
+	
+	.col-md-1 {width: 100%;}
+	.col-md-2 {width: 100%;}
+	.col-md-3 {width: 100%;}
+	.col-md-4 {width: 100%;}
+	.col-md-5 {width: 100%;}
+	.col-md-6 {width: 100%;}
+	.col-md-7 {width: 100%;}
+	.col-md-8 {width: 100%;}
+	.col-md-9 {width: 100%;}
+	.col-md-10 {width: 100%;}
+	.col-md-11 {width: 100%;}
+	.col-md-12 {width: 100%;}
+	
+	.col-lg-1 {width: 100%;}
+	.col-lg-2 {width: 100%;}
+	.col-lg-3 {width: 100%;}
+	.col-lg-4 {width: 100%;}
+	.col-lg-5 {width: 100%;}
+	.col-lg-6 {width: 100%;}
+	.col-lg-7 {width: 100%;}
+	.col-lg-8 {width: 100%;}
+	.col-lg-9 {width: 100%;}
+	.col-lg-10 {width: 100%;}
+	.col-lg-11 {width: 100%;}
+	.col-lg-12 {width: 100%;}
+	
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	
+	.col-xs-1 {width: 8.33%;}
+	.col-xs-2 {width: 16.66%;}
+	.col-xs-3 {width: 25%;}
+	.col-xs-4 {width: 33.33%;}
+	.col-xs-5 {width: 41.66%;}
+	.col-xs-6 {width: 50%;}
+	.col-xs-7 {width: 58.33%;}
+	.col-xs-8 {width: 66.66%;}
+	.col-xs-9 {width: 75%;}
+	.col-xs-10 {width: 83.33%;}
+	.col-xs-11 {width: 91.66%;}
+	.col-xs-12 {width: 100%;}
+	
+	
+	.col-sm-1 {width: 8.33%;}
+	.col-sm-2 {width: 16.66%;}
+	.col-sm-3 {width: 25%;}
+	.col-sm-4 {width: 33.33%;}
+	.col-sm-5 {width: 41.66%;}
+	.col-sm-6 {width: 50%;}
+	.col-sm-7 {width: 58.33%;}
+	.col-sm-8 {width: 66.66%;}
+	.col-sm-9 {width: 75%;}
+	.col-sm-10 {width: 83.33%;}
+	.col-sm-11 {width: 91.66%;}
+	.col-sm-12 {width: 100%;}
+	
+	.col-md-1 {width: 8.33%;}
+	.col-md-2 {width: 16.66%;}
+	.col-md-3 {width: 25%;}
+	.col-md-4 {width: 33.33%;}
+	.col-md-5 {width: 41.66%;}
+	.col-md-6 {width: 50%;}
+	.col-md-7 {width: 58.33%;}
+	.col-md-8 {width: 66.66%;}
+	.col-md-9 {width: 75%;}
+	.col-md-10 {width: 83.33%;}
+	.col-md-11 {width: 91.66%;}
+	.col-md-12 {width: 100%;}
+	
+	.col-lg-1 {width: 8.33%;}
+	.col-lg-2 {width: 16.66%;}
+	.col-lg-3 {width: 25%;}
+	.col-lg-4 {width: 33.33%;}
+	.col-lg-5 {width: 41.66%;}
+	.col-lg-6 {width: 50%;}
+	.col-lg-7 {width: 58.33%;}
+	.col-lg-8 {width: 66.66%;}
+	.col-lg-9 {width: 75%;}
+	.col-lg-10 {width: 83.33%;}
+	.col-lg-11 {width: 91.66%;}
+	.col-lg-12 {width: 100%;}
+	
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1999px){
+	
+	.col-xs-1 {width: 8.33%;}
+	.col-xs-2 {width: 16.66%;}
+	.col-xs-3 {width: 25%;}
+	.col-xs-4 {width: 33.33%;}
+	.col-xs-5 {width: 41.66%;}
+	.col-xs-6 {width: 50%;}
+	.col-xs-7 {width: 58.33%;}
+	.col-xs-8 {width: 66.66%;}
+	.col-xs-9 {width: 75%;}
+	.col-xs-10 {width: 83.33%;}
+	.col-xs-11 {width: 91.66%;}
+	.col-xs-12 {width: 100%;}
+	
+	
+	.col-sm-1 {width: 8.33%;}
+	.col-sm-2 {width: 16.66%;}
+	.col-sm-3 {width: 25%;}
+	.col-sm-4 {width: 33.33%;}
+	.col-sm-5 {width: 41.66%;}
+	.col-sm-6 {width: 50%;}
+	.col-sm-7 {width: 58.33%;}
+	.col-sm-8 {width: 66.66%;}
+	.col-sm-9 {width: 75%;}
+	.col-sm-10 {width: 83.33%;}
+	.col-sm-11 {width: 91.66%;}
+	.col-sm-12 {width: 100%;}
+	
+	.col-md-1 {width: 8.33%;}
+	.col-md-2 {width: 16.66%;}
+	.col-md-3 {width: 25%;}
+	.col-md-4 {width: 33.33%;}
+	.col-md-5 {width: 41.66%;}
+	.col-md-6 {width: 50%;}
+	.col-md-7 {width: 58.33%;}
+	.col-md-8 {width: 66.66%;}
+	.col-md-9 {width: 75%;}
+	.col-md-10 {width: 83.33%;}
+	.col-md-11 {width: 91.66%;}
+	.col-md-12 {width: 100%;}
+	
+	.col-lg-1 {width: 8.33%;}
+	.col-lg-2 {width: 16.66%;}
+	.col-lg-3 {width: 25%;}
+	.col-lg-4 {width: 33.33%;}
+	.col-lg-5 {width: 41.66%;}
+	.col-lg-6 {width: 50%;}
+	.col-lg-7 {width: 58.33%;}
+	.col-lg-8 {width: 66.66%;}
+	.col-lg-9 {width: 75%;}
+	.col-lg-10 {width: 83.33%;}
+	.col-lg-11 {width: 91.66%;}
+	.col-lg-12 {width: 100%;}
+	
+}
+
+/* Responsive Menu System */
+
+.menu-primary-container{
+    
+	background:#f1f1f1;
+	width:100%;
+
+}
+
+.menu-primary-container ul{
+	
+	list-style:none;
+	
+}
+
+
+@media only screen and (max-width: 767px){
+
+.cpbtn{
+	padding:2px 5px;
+	border:1px solid #333;
+	border-radius:4px;
+	visibility:visible;
+	display:inline-block;
+	margin:10px;
+}
+
+.cpbtn > div{
+	width:20px;
+	height:4px;
+	background:#333;
+	margin:3px 0px;
+	border-radius:4px;
+}
+
+.menu-primary-container > ul{
+	
+	visibility:hidden;
+	display:none;
+	
+}
+
+.menu-primary-container ul li{
+	
+	background-color:#f1f1f1;
+	text-align:left;
+	float:none;
+	position:relative;
+	border-bottom:1px solid white;
+	
+}
+
+.menu-primary-container ul li a {
+	
+	width:100%;
+	height:40px;
+	line-height:40px;
+	text-decoration:none;
+	color:black;
+	display:block;
+	
+	
+}
+
+.menu-primary-container ul li a:hover {
+	
+	background-color:green;
+	color:white;
+	
+}
+
+/*navigation submenu level 1*/
+
+.menu-primary-container ul ul {
+	
+	padding-left:20px;
+	
+}
+
+.menu-primary-container span{
+	
+	display:none;
+}
+
+
+}
+
+@media only screen and (min-width: 768px){
+
+
+
+
+
+.menu-primary-container > ul > li{     /*top level */
+	
+	float:left;
+	
+}
+
+.menu-primary-container > ul> li > a{
+    display:block;
+    background:#f1f1f1;
+    padding:10px 20px;
+	text-decoration:none;
+}
+
+
+.menu-primary-container > ul > li:hover > a{
+    color:#fff;
+	background-color:black;
+}
+
+.menu-primary-container > ul > li > ul{        /* Second Level */
+    
+	position:absolute;
+	display:none;
+    background-color:#f1f1f1;
+	
+}
+
+
+.menu-primary-container > ul > li:hover > ul{
+    
+	display:block;
+    
+}
+
+.menu-primary-container > ul > li > ul > li > a{
+    display:block;
+    padding:10px 20px;
+	text-decoration:none;
+}
+
+.menu-primary-container > ul > li > ul > li:hover > a{
+    color:#fff;
+	background-color:black;
+}
+
+
+.menu-primary-container  ul  li  ul li {   /* Third Level & beyond */ /* necessary for the keep them align*/
+
+position:relative;
+
+}
+
+.menu-primary-container > ul > li > ul li > ul{ 
+	
+	position:absolute;
+	display:none;
+    background-color:#f1f1f1;
+}
+
+.menu-primary-container > ul > li > ul li:hover > ul{
+	
+	display:inline-block;
+    left:100%;
+    top:0;
+}
+
+.menu-primary-container > ul > li > ul > li > ul  li > a{
+    display:block;
+    padding:10px 20px;
+    white-space:nowrap;
+	text-decoration:none;
+}
+
+.menu-primary-container ul > li > ul > li > ul  li:hover > a{
+    background-color:black;
+	color:white
+}
+
+/*resposive menu*/
+
+.cpbtn{
+	visibility:hidden;
+}
+
+}
